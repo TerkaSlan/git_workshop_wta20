@@ -4,6 +4,7 @@
 - Session based testing 
 - Jira and Bug
 - Manažment testovania 
+naučila som sa používať Testrail
 - Modely vývoja software-u 
 - Techniky tvorby testov
  Naučila som sa kategórie techník tvorby návrhu testov 1. založené na špecifikácii
