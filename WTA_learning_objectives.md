@@ -12,4 +12,6 @@
 - HTML, CSS, JavaScript 
 - Nástroje testovania 
 - Testovanie API 
+naučila som sa pracovať s Postmanom a Swagerrom
 - SQL 
+naučila som sa pracovať s databázou
