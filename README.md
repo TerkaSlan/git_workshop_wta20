@@ -4,3 +4,4 @@ Workshop pre začiatočníčky v Gite. V rámci workshopu pokryjeme nasledujúce
 - git clone
 - git add / commit
 - git pull
+- git push
