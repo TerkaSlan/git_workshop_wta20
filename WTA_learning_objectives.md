@@ -28,6 +28,12 @@
 5. Nasadenie systému
 6. Udržanie systému
 
+    -Sekvenčné vývojové modely:
+    1. Waterfall 
+    2. V-model
+    3. W-model
+
+
 - # **Techniky tvorby testov**
     - Techniky založené na špecifikácii (čierna skrinka)
     - Techniky založené na štruktúre (white box biela skrinka)
