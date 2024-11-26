@@ -8,6 +8,7 @@
     - Zlyhanie = výsledok činnosti chybného software.
 
 - # **Session based testing** 
+    - kontrolovaný exploratory testing 
     - hovorili sme o automatizačných prístupoch
 
 - # **Jira and Bug**
