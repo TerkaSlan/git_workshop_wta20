@@ -12,4 +12,4 @@
 - Nástroje testovania 
 - Testovanie API 
 - SQL 
-    - oboznámili sme sa s teoretickými základmi o databázach a prakticky vyskúšali základné syntaktické konštrukcie jazyka SQL
+    - oboznámili sme sa s teoretickými základmi o databázach a prakticky vyskúšali základné syntaktické konštrukcie  jazyka SQL
