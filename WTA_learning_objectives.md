@@ -1,25 +1,25 @@
 # WTA learning objectives
 
-- Úvod do testovania 
+- **Úvod do testovania**
     - oboznámili sme sa s významom testovania, jeho výhodami a dôsledkami nedostatočného testovania a zadefinovali sme si rozdiel medzi omylom, defektom a zlyhaním
-7 princípov testovania
-Omyl (Ľudská chyba) – človek.
-Defekt (bug, chyba) = software, program, aplikácia.
-Zlyhanie = výsledok činnosti chybného software.
+- 7 princípov testovania
+- Omyl (Ľudská chyba) – človek.
+- Defekt (bug, chyba) = software, program, aplikácia.
+- Zlyhanie = výsledok činnosti chybného software.
 
-- Session based testing 
-Automatizačné prístupy
+- **Session based testing** 
+- hovorili sme o automatizačných prístupoch
 
-- Jira and Bug
-Jira je najpopulárnejší nástroj na riadenie projektu.
+- **Jira and Bug**
+- Jira je najpopulárnejší nástroj na riadenie projektu.
 
-- Manažment testovania 
+- **Manažment testovania** 
 - Modely vývoja software-u
     - prešli sme si historickým vývojom SDLC a akú úlohu zohráva testovanie v jednotlivých fázach vývoja SW
-Manažment testov v TestRail - platforma pre centrálne manažovanie testov.
+- Manažment testov v TestRail - platforma pre centrálne manažovanie testov.
 
-- Modely vývoja software-u 
-Životný cyklus vývoja softvéru: 
+-**Modely vývoja software-u** 
+- Životný cyklus vývoja softvéru: 
 1. Zhromažďovanie požiadaviek 
 2. Navrhovanie systému
 3. Vývoj systému
@@ -27,25 +27,25 @@ Manažment testov v TestRail - platforma pre centrálne manažovanie testov.
 5. Nasadenie systému
 6. Udržanie systému
 
-- Techniky tvorby testov
-Techniky založené na špecifikácii (čierna skrinka)
-Techniky založené na štruktúre (white box biela skrinka)
-Techniky založené na skúsenosti
+- **Techniky tvorby testov**
+- Techniky založené na špecifikácii (čierna skrinka)
+- Techniky založené na štruktúre (white box biela skrinka)
+- Techniky založené na skúsenosti
 
-- HTML, CSS, JavaScript
-HTML - Hypertext Markap Language, je to popisný jazyk, definuje štruktúru a obsah stránky.
+- **HTML, CSS, JavaScript**
+- HTML - Hypertext Markap Language, je to popisný jazyk, definuje štruktúru a obsah stránky.
 
-- Nástroje testovania 
-Nástrojom testovania slúžia na:
+- **Nástroje testovania** 
+- Nástrojom testovania slúžia na:
     • plánovanie, sprehľadnenie nápadov
     • manažment testovania
     • zefektívnenie testovania
     • nahradenie manuálneho testovania
     • umožnenie testovania
 
-- Testovanie API 
-API - Application Programming Interface
-REST API - REpresentational State Transfer
+- **Testovanie API** 
+- API - Application Programming Interface
+- REST API - REpresentational State Transfer
 
-- SQL 
+- **SQL** 
     - oboznámili sme sa s teoretickými základmi o databázach a prakticky vyskúšali základné syntaktické konštrukcie  jazyka SQL
