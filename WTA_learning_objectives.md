@@ -6,6 +6,12 @@
     - Omyl (Ľudská chyba) – človek.
     - Defekt (bug, chyba) = software, program, aplikácia.
     - Zlyhanie = výsledok činnosti chybného software.
+- Úvod do testovania 
+- Session based testing 
+- Jira and Bug
+- Manažment testovania 
+naučila som sa používať Testrail
+- Modely vývoja software-u 
 - Techniky tvorby testov
  Naučila som sa kategórie techník tvorby návrhu testov 1. založené na špecifikácii
                                                        2. založené na štruktúre
