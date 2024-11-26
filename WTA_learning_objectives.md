@@ -20,12 +20,12 @@
 
 - # **Modely vývoja software-u** 
     - Životný cyklus vývoja softvéru: 
-    1. Zhromažďovanie požiadaviek 
-    2. Navrhovanie systému
-    3. Vývoj systému
-    4. Testovanie systému
-    5. Nasadenie systému
-    6. Udržanie systému
+1. Zhromažďovanie požiadaviek 
+2. Navrhovanie systému
+3. Vývoj systému
+4. Testovanie systému
+5. Nasadenie systému
+6. Udržanie systému
 
 - # **Techniky tvorby testov**
     - Techniky založené na špecifikácii (čierna skrinka)
@@ -49,3 +49,4 @@
 
 - # **SQL** 
     - oboznámili sme sa s teoretickými základmi o databázach a prakticky vyskúšali základné syntaktické konštrukcie  jazyka SQL
+    - SQL - Structured query language
