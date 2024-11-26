@@ -11,7 +11,7 @@ Zlyhanie = výsledok činnosti chybného software.
 Automatizačné prístupy
 
 - Jira and Bug
-Jire je najpopulárnejší nástroj na riadenie projektu.
+Jira je najpopulárnejší nástroj na riadenie projektu.
 
 - Manažment testovania 
 - Modely vývoja software-u
