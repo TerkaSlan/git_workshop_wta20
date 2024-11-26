@@ -6,22 +6,7 @@
     - Omyl (Ľudská chyba) – človek.
     - Defekt (bug, chyba) = software, program, aplikácia.
     - Zlyhanie = výsledok činnosti chybného software.
-- Úvod do testovania 
-- Session based testing 
-- Jira and Bug
-- Manažment testovania 
-naučila som sa používať Testrail
-- Modely vývoja software-u 
-- Techniky tvorby testov
- Naučila som sa kategórie techník tvorby návrhu testov 1. založené na špecifikácii
-                                                       2. založené na štruktúre
-                                                       3. založené na skúsenostiach    
-- HTML, CSS, JavaScript 
-- Nástroje testovania 
-- Testovanie API 
-naučila som sa pracovať s Postmanom a Swagerrom
-- SQL 
-naučila som sa pracovať s databázou
+
 
 - # **Session based testing** 
     - kontrolovaný exploratory testing 
@@ -31,6 +16,7 @@ naučila som sa pracovať s databázou
     - Jira je najpopulárnejší nástroj na riadenie projektu.
 
 - # **Manažment testovania**
+    - naučila som sa používať Testrail
     - Modely vývoja software-u
     - prešli sme si historickým vývojom SDLC a akú úlohu zohráva testovanie v jednotlivých fázach vývoja SW
     - Manažment testov v TestRail - platforma pre centrálne manažovanie testov.
@@ -51,6 +37,9 @@ naučila som sa pracovať s databázou
 
 
 - # **Techniky tvorby testov**
+    - Naučila som sa kategórie techník tvorby návrhu testov 1. založené na špecifikácii
+                                                            2. založené na štruktúre
+                                                            3. založené na skúsenostiach    
     - Techniky založené na špecifikácii (čierna skrinka)
     - Techniky založené na štruktúre (white box biela skrinka)
     - Techniky založené na skúsenosti
@@ -67,9 +56,11 @@ naučila som sa pracovať s databázou
     • umožnenie testovania
 
 - # **Testovanie API** 
+    - naučila som sa pracovať s Postmanom a Swagerrom
     - API - Application Programming Interface
     - REST API - REpresentational State Transfer
 
 - # **SQL** 
+    - naučila som sa pracovať s databázou
     - oboznámili sme sa s teoretickými základmi o databázach a prakticky vyskúšali základné syntaktické konštrukcie  jazyka SQL
     - SQL - Structured query language
