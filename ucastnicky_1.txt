@@ -1,4 +1,15 @@
+<<<<<<< Updated upstream
 anna brisova
 Zuzana Chovanová
+<<<<<<< Updated upstream
 Daniela Gálisová 
 terka slaninakova
+=======
+Daniela Gálisová
+anna brisova
+terka slaninakova
+=======
+Daniela Gálisová
+terka slaninakova
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
