@@ -1,66 +1,40 @@
-# WTA learning objectives
-
-- # **Úvod do testovania**
-    - oboznámili sme sa s významom testovania, jeho výhodami a dôsledkami nedostatočného testovania a zadefinovali sme si rozdiel medzi omylom, defektom a zlyhaním
+ 
+ # **Úvod do testovania**
+    - význam testovania, jeho výhody a dôsledky nedostatočného testovania 
     - 7 princípov testovania
-    - Omyl (Ľudská chyba) – človek.
-    - Defekt (bug, chyba) = software, program, aplikácia.
-    - Zlyhanie = výsledok činnosti chybného software.
+    - Omyl / Defekt / Zlyhanie 
 
+ # **Typy testov a úrovne testovania**
+    - backend / frontend    
+    - testovanie komponentov / systémové / akceptačné
 
-- # **Session based testing** 
-    - kontrolovaný exploratory testing 
-    - hovorili sme o automatizačných prístupoch
+  # **Session based testing** 
+     automatizačné prístupy
 
-- # **Jira and Bug**
+  # **Jira and Bug**
     - Jira je najpopulárnejší nástroj na riadenie projektu.
-
-- # **Manažment testovania**
-    - naučila som sa používať Testrail
-    - Modely vývoja software-u
-    - prešli sme si historickým vývojom SDLC a akú úlohu zohráva testovanie v jednotlivých fázach vývoja SW
-    - Manažment testov v TestRail - platforma pre centrálne manažovanie testov.
-
-- # **Modely vývoja software-u** 
-    - Životný cyklus vývoja softvéru: 
-1. Zhromažďovanie požiadaviek 
-2. Navrhovanie systému
-3. Vývoj systému
-4. Testovanie systému
-5. Nasadenie systému
-6. Udržanie systému
-
+  
+  # **Modely vývoja software-u** 
+    - Životný cyklus vývoja softvéru
     -Sekvenčné vývojové modely:
-    1. Waterfall 
-    2. V-model
-    3. W-model
+      Waterfall /  V-model /  W-model
 
+  # **Manažment testovania**
+    - modely vývoja software-u  
 
-- # **Techniky tvorby testov**
-    - Naučila som sa kategórie techník tvorby návrhu testov 1. založené na špecifikácii
-                                                            2. založené na štruktúre
-                                                            3. založené na skúsenostiach    
-    - Techniky založené na špecifikácii (čierna skrinka)
-    - Techniky založené na štruktúre (white box biela skrinka)
-    - Techniky založené na skúsenosti
+  # **Techniky tvorby testov**    
+    techniky založené na špecifikácii /
+      na štruktúre / na skúsenosti
 
-- # **HTML, CSS, JavaScript**
-    - HTML - Hypertext Markap Language, je to popisný jazyk, definuje štruktúru a obsah stránky.
+  # **HTML, CSS, JavaScript**
+    -HTML - Hypertext Markap Language, 
+     definuje štruktúru a obsah stránky.
 
-- # **Nástroje testovania** 
-    - Nástroje testovania slúžia na:
-    • plánovanie, sprehľadnenie nápadov
-    • manažment testovania
-    • zefektívnenie testovania
-    • nahradenie manuálneho testovania
-    • umožnenie testovania
-
-- # **Testovanie API** 
-    - naučila som sa pracovať s Postmanom a Swagerrom
-    - API - Application Programming Interface
-    - REST API - REpresentational State Transfer
-
-- # **SQL** 
-    - naučila som sa pracovať s databázou
-    - oboznámili sme sa s teoretickými základmi o databázach a prakticky vyskúšali základné syntaktické konštrukcie  jazyka SQL
-    - SQL - Structured query language
+  # **Nástroje testovania** 
+    slúžia na: plánovanie, zefektívnenie testovania
+   
+ # **Testovanie API** 
+    Postman a Swagerr, API - Application Programming Interface
+    
+ # **SQL** 
+    databázy / SQL - Structured query language
