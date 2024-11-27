@@ -43,6 +43,7 @@
     - HTML - Hypertext Markap Language, je to popisný jazyk, definuje štruktúru a obsah stránky.
     -JavaScript-je programovací jazyk , vie manipulovať s elementami, vytvárať, odoberať,editovať.
                 Vdychne stránke život.
+    -CSS- je značkovací jazyk, ktorý definuje ako má stránka vyzerať, čiže jej vizuál.
 
 - # **Nástroje testovania** 
     - Nástroje testovania slúžia na:
