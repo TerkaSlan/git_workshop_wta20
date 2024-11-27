@@ -30,6 +30,7 @@
   # **HTML, CSS, JavaScript**
     -HTML - Hypertext Markap Language, 
      definuje štruktúru a obsah stránky.
+    -CSS - dotvára, popisuje elementy HTML; definuje, ako má stránka vyzerať.
 
   # **Nástroje testovania** 
     slúžia na: plánovanie, zefektívnenie testovania
