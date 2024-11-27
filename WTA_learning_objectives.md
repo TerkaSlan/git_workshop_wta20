@@ -3,12 +3,15 @@
     - význam testovania, jeho výhody a dôsledky nedostatočného testovania 
     - 7 princípov testovania
     - Omyl / Defekt / Zlyhanie 
+    - co je riziko/kvalita
+    - ciele testovania
 
  # **Typy testov a úrovne testovania**
     - backend / frontend    
     - testovanie komponentov / systémové / akceptačné
 
   # **Session based testing** 
+    - Exploratory testing/Session based testing
      automatizačné prístupy
 
   # **Jira and Bug**
