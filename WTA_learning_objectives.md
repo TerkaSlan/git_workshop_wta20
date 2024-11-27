@@ -56,7 +56,13 @@
 - # **Testovanie API** 
     - API - Application Programming Interface
     - REST API - REpresentational State Transfer
+    - základné metódy HTML protokolu - GET, PUT, POST, DELETE
 
 - # **SQL** 
     - oboznámili sme sa s teoretickými základmi o databázach a prakticky vyskúšali základné syntaktické konštrukcie  jazyka SQL
     - SQL - Structured query language
+    - Primárny kľúč vs. Cudzí kľúč
+        - primárny kľúč slúži na jednoznačnú identifikáciu záznamu v tabuľke, ide o unikátne ID, ktoré nesmie byť null
+        - cudzí kľúč vytvára prepojenie na jednu alebo viacero stĺpcov tabuľky
+    - Relačné databázy sú založené na relačnom modeli, ktorý definuje ako sú dáta uložené v tabuľkách, riadkoch a stĺpcoch
+    - základný príkaz pre výber a zobrazenie všetkých údajov: SELECT * FROM [tabuľka]
