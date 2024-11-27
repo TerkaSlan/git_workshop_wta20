@@ -13,6 +13,7 @@
 
 - # **Jira and Bug**
     - Jira je najpopulárnejší nástroj na riadenie projektu.
+    - Bug je programatorská chyba v počítačovom programe alebo v aplikácii.
 
 - # **Manažment testovania**
     - Modely vývoja software-u
