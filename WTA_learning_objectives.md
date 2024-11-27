@@ -21,6 +21,7 @@
 
   # **Manažment testovania**
     - modely vývoja software-u  
+    - Test manažment v SDLC: analýza, dizajn, vývoj, testovanie, nasadenie, údržba.
 
   # **Techniky tvorby testov**    
     techniky založené na špecifikácii /
