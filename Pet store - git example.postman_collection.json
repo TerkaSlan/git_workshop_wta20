@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "a3572a4a-d506-4db9-b111-cf7488029b08",
+		"_postman_id": "575fc9f8-68f8-4ff6-af08-c6e694088a22",
 		"name": "Pet store - git example",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "1667070"
+		"_exporter_id": "39456967"
 	},
 	"item": [
 		{
@@ -235,6 +235,21 @@
 		},
 		{
 			"name": "Delete User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "DELETE",
 				"header": [
