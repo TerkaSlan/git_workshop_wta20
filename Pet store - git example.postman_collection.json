@@ -1,9 +1,5 @@
 {
 	"info": {
-		"_postman_id": "575fc9f8-68f8-4ff6-af08-c6e694088a22",
-		"name": "Pet store - git example",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "39456967"
 	},
 	"item": [
 		{
@@ -15,7 +11,13 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});"
+							"});\r",
+							"\r",
+							"pm.test(\"User ID check\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.message).to.eql(\"0\");\r",
+							"});\r",
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
