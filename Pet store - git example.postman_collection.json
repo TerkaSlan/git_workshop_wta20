@@ -1,34 +1,27 @@
 {
 	"info": {
+		"_postman_id": "19b3ac0d-c49d-4199-a205-20d7da56eb52",
+		"name": "petStore API - WTA20",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39458131"
 	},
 	"item": [
 		{
-			"name": "Create User",
+			"name": "create user",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
-							"pm.test(\"User ID check\", function () {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.message).to.eql(\"0\");\r",
-							"});\r",
-							""
-						],
-						"type": "text/javascript",
-						"packages": {}
-					}
-				},
-				{
-					"listen": "prerequest",
-					"script": {
-						"exec": [
-							"pm.collectionVariables.set(\"username\", pm.variables.replaceIn('{{$randomUserName}}'));\r",
-							"pm.collectionVariables.set(\"password\", pm.variables.replaceIn('{{$randomPassword}}'));"
+							"pm.test(\"User was created - status code 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"User ID check OK\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.message).to.eql(\"2909\");",
+							"});"
 						],
 						"type": "text/javascript",
 						"packages": {}
@@ -49,7 +42,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"id\": 0,\n  \"username\": \"{{username}}\",\n  \"firstName\": \"Terka\",\n  \"lastName\": \"string\",\n  \"email\": \"string\",\n  \"password\": \"{{password}}\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}",
+					"raw": "{\n  \"id\": 2909,\n  \"username\": \"kacena84\",\n  \"firstName\": \"Katarina\",\n  \"lastName\": \"Kalinayova\",\n  \"email\": \"kaca@gmail.com\",\n  \"password\": \"jablko\",\n  \"phone\": \"09051111111\",\n  \"userStatus\": 0\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -57,27 +50,43 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/user",
+					"raw": "https://petstore.swagger.io/v2/user",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"petstore",
+						"swagger",
+						"io"
 					],
 					"path": [
+						"v2",
 						"user"
 					]
-				}
+				},
+				"description": "Generated from cURL: curl -X 'POST' \\\n  'https://petstore.swagger.io/v2/user' \\\n  -H 'accept: application/json' \\\n  -H 'Content-Type: application/json' \\\n  -d '{\n  \"id\": 2909,\n  \"username\": \"kacena84\",\n  \"firstName\": \"Katarina\",\n  \"lastName\": \"Kalinayova\",\n  \"email\": \"kaca@gmail.com\",\n  \"password\": \"jablko\",\n  \"phone\": \"09051111111\",\n  \"userStatus\": 0\n}'"
 			},
 			"response": []
 		},
 		{
-			"name": "Get User",
+			"name": "get user by user name",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Check username equals created user\", function () {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.username).to.eql(pm.collectionVariables.get(\"username\"));\r",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 800ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);",
+							"});",
+							"",
+							"pm.test(\"User name check\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.username).to.eql(\"kacena84\");",
+							"});",
+							"pm.test(\"User name contains Kacena\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"kacena\");",
 							"});"
 						],
 						"type": "text/javascript",
@@ -94,27 +103,41 @@
 					}
 				],
 				"url": {
-					"raw": "{{url}}/user/{{username}}",
+					"raw": "https://petstore.swagger.io/v2/user/kacena84",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"petstore",
+						"swagger",
+						"io"
 					],
 					"path": [
+						"v2",
 						"user",
-						"{{username}}"
+						"kacena84"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Log In User",
+			"name": "login user",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"var jsonData = pm.response.json();\r",
-							"pm.collectionVariables.set(\"session\", jsonData.message.split(\":\")[1]);"
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 800ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);",
+							"});",
+							"",
+							"pm.test(\"Session is present in the response\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"logged in user session\");",
+							"});",
+							"",
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
@@ -130,22 +153,26 @@
 					}
 				],
 				"url": {
-					"raw": "{{url}}/user/login?username={{username}}&password={{password}}",
+					"raw": "https://petstore.swagger.io/v2/user/login?username=kacena84&password=jablko",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"petstore",
+						"swagger",
+						"io"
 					],
 					"path": [
+						"v2",
 						"user",
 						"login"
 					],
 					"query": [
 						{
 							"key": "username",
-							"value": "{{username}}"
+							"value": "kacena84"
 						},
 						{
 							"key": "password",
-							"value": "{{password}}"
+							"value": "jablko"
 						}
 					]
 				}
@@ -153,7 +180,28 @@
 			"response": []
 		},
 		{
-			"name": "Update user",
+			"name": "update user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"User ID check after update\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.message).to.eql(\"2909\");",
+							"});",
+							"pm.test(\"Response time is less than 800ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -164,15 +212,11 @@
 					{
 						"key": "Content-Type",
 						"value": "application/json"
-					},
-					{
-						"key": "session",
-						"value": "{{session}}"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"id\": 0,\n  \"username\": \"{{username}}2\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"email\": \"string\",\n  \"password\": \"string2\",\n  \"phone\": \"string\",\n  \"userStatus\": 0\n}",
+					"raw": "{\n  \"id\": 2909,\n  \"username\": \"kacena84\",\n  \"firstName\": \"Katarina\",\n  \"lastName\": \"Kalinayova\",\n  \"email\": \"kaca69@gmail.com\",\n  \"password\": \"jablko\",\n  \"phone\": \"09051111111\",\n  \"userStatus\": 0\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -180,33 +224,52 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/user/{{username}}",
+					"raw": "https://petstore.swagger.io/v2/user/kacena84",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"petstore",
+						"swagger",
+						"io"
 					],
 					"path": [
+						"v2",
 						"user",
-						"{{username}}"
+						"kacena84"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Get User After Update",
+			"name": "get user by user name after upade",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Check username equals updated user\", function () {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.username).to.eql(pm.collectionVariables.get(\"username\") + \"2\");\r",
-							"});\r",
-							"\r",
-							"pm.test(\"Check password equals updated password\", function () {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.password).to.eql(\"string2\");\r",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 800ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);",
+							"});",
+							"",
+							"pm.test(\"User name check\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.username).to.eql(\"kacena84\");",
+							"});",
+							"pm.test(\"User name contains Kacena\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"kacena84\");",
+							"});",
+							"",
+							"pm.test(\"Update email check\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.email).to.eql(\"kaca69@gmail.com\");",
+							"});",
+							"",
+							"pm.test(\"Update email check 2\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"kaca69@gmail.com\");",
 							"});"
 						],
 						"type": "text/javascript",
@@ -223,28 +286,36 @@
 					}
 				],
 				"url": {
-					"raw": "{{url}}/user/{{username}}2",
+					"raw": "https://petstore.swagger.io/v2/user/kacena84",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"petstore",
+						"swagger",
+						"io"
 					],
 					"path": [
+						"v2",
 						"user",
-						"{{username}}2"
+						"kacena84"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Delete User",
+			"name": "delete user",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 404\", function () {\r",
-							"    pm.response.to.have.status(404);\r",
-							"});\r",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Deleted user check\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.message).to.eql(\"kacena84\");",
+							"});",
 							""
 						],
 						"type": "text/javascript",
@@ -261,27 +332,44 @@
 					}
 				],
 				"url": {
-					"raw": "{{url}}/user/{{username}}2",
+					"raw": "https://petstore.swagger.io/v2/user/kacena84",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"petstore",
+						"swagger",
+						"io"
 					],
 					"path": [
+						"v2",
 						"user",
-						"{{username}}2"
+						"kacena84"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Get User After Delete",
+			"name": "get user by user name after upade deletion",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 404\", function () {\r",
-							"    pm.response.to.have.status(404);\r",
+							"pm.test(\"Status code is 404 - User not found\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 800ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(800);",
+							"});",
+							"",
+							"pm.test(\"User was not found\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.message).to.eql(\"User not found\");",
+							"",
+							"    pm.test(\"User was not found -second check\", function () {",
+							"        pm.expect(pm.response.text()).to.include(\"User not found\");",
+							"    });",
 							"});"
 						],
 						"type": "text/javascript",
@@ -298,58 +386,21 @@
 					}
 				],
 				"url": {
-					"raw": "{{url}}/user/{{username}}2",
+					"raw": "https://petstore.swagger.io/v2/user/kacena84",
+					"protocol": "https",
 					"host": [
-						"{{url}}"
+						"petstore",
+						"swagger",
+						"io"
 					],
 					"path": [
+						"v2",
 						"user",
-						"{{username}}2"
+						"kacena84"
 					]
 				}
 			},
 			"response": []
-		}
-	],
-	"event": [
-		{
-			"listen": "prerequest",
-			"script": {
-				"type": "text/javascript",
-				"packages": {},
-				"exec": [
-					""
-				]
-			}
-		},
-		{
-			"listen": "test",
-			"script": {
-				"type": "text/javascript",
-				"packages": {},
-				"exec": [
-					""
-				]
-			}
-		}
-	],
-	"variable": [
-		{
-			"key": "url",
-			"value": "https://petstore.swagger.io/v2",
-			"type": "string"
-		},
-		{
-			"key": "username",
-			"value": ""
-		},
-		{
-			"key": "password",
-			"value": ""
-		},
-		{
-			"key": "session",
-			"value": ""
 		}
 	]
 }
